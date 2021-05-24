@@ -1,0 +1,6 @@
+framework module Pods_Marvelgram_but_In_RxSwift {
+  umbrella header "Pods-Marvelgram_but_In_RxSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

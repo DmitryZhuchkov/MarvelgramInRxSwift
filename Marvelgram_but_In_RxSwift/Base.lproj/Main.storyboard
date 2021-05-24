@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="G7r-uq-XMt">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Marvel Controller-->
+        <scene sceneID="5C6-Gf-hNS">
+            <objects>
+                <viewController id="ObV-1j-mJZ" customClass="MarvelController" customModule="Marvelgram_but_In_RxSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gBF-ss-KGe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xdm-y3-N01">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                <color key="backgroundColor" red="0.1215697452" green="0.1215666011" blue="0.121568732" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="GPA-uD-Wqf">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="VT4-C8-9dy">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VsO-3M-Nl3"/>
+                        <color key="backgroundColor" red="0.1215697452" green="0.1215666011" blue="0.121568732" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.1215697452" green="0.1215666011" blue="0.121568732" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="xdm-y3-N01" firstAttribute="top" secondItem="VsO-3M-Nl3" secondAttribute="top" id="GxU-LH-CxE"/>
+                            <constraint firstItem="xdm-y3-N01" firstAttribute="bottom" secondItem="VsO-3M-Nl3" secondAttribute="bottom" id="Ozf-Jv-fAe"/>
+                            <constraint firstItem="xdm-y3-N01" firstAttribute="trailing" secondItem="VsO-3M-Nl3" secondAttribute="trailing" id="VaT-74-2Z1"/>
+                            <constraint firstItem="xdm-y3-N01" firstAttribute="leading" secondItem="VsO-3M-Nl3" secondAttribute="leading" id="qLU-PJ-bbJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="sCv-MH-7Ov">
+                        <barButtonItem key="leftBarButtonItem" image="marvel-logo" style="plain" id="fUN-ci-2W1">
+                            <color key="tintColor" red="0.044984781750000001" green="0.044984781750000001" blue="0.044984781750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="marvelPhotosCollectionView" destination="xdm-y3-N01" id="QZV-o9-oed"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L31-Sa-EX8" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1837.68115942029" y="75.669642857142847"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="F1x-My-Jkz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="G7r-uq-XMt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="7WY-rm-6Aa">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.1215697452" green="0.1215666011" blue="0.121568732" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ObV-1j-mJZ" kind="relationship" relationship="rootViewController" id="f09-Y2-Snv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4af-2f-9ot" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="927.536231884058" y="75.669642857142847"/>
+        </scene>
+        <!--Detail Marvel Controller-->
+        <scene sceneID="ldb-57-bqq">
+            <objects>
+                <viewController storyboardIdentifier="MarvelDetail" id="CFB-XM-liR" customClass="DetailMarvelController" customModule="Marvelgram_but_In_RxSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kt8-si-JrR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="7Qc-4v-UiX"/>
+                        <color key="backgroundColor" red="0.1215697452" green="0.1215666011" blue="0.121568732" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MMC-OI-seG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pzf-zO-7wf" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2515.9420289855075" y="75.669642857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="marvel-logo" width="75" height="30"/>
+    </resources>
+</document>
